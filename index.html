@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova FX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation Bar -->
+  <nav class="bg-green-500 text-white p-4 sticky top-0 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Nova FX</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-green-200">Home</a></li>
+        <li><a href="#about" class="hover:text-green-200">About</a></li>
+        <li><a href="#contact" class="hover:text-green-200">Contact</a></li>
+      </ul>
+    </div>
+  </nav> 
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-green-400 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Nova FX</h2>
+      <p class="text-lg mb-6">I'm a passionate individual showcasing my work and skills.</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#about" class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Learn More</a>
+        <a href="https://wa.me/+2349073521743" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 flex items-center">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.134.297-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.074-.149-.669-.816-.911-1.115-.241-.297-.526-.247-.669-.247-.142 0-.297-.05-.445-.075-.149-.024-.347-.074-.52-.174-.173-.099-.892-.842-1.09-1.139-.198-.297-.347-.645-.347-.992s.149-.645.446-.894c.297-.248 1.634-.842 2.133-.992.497-.149 1.09-.099 1.387.099.297.198 1.138.842 1.336 1.139.198.297.347.645.347.992s-.148.645-.347.842c-.198.198-1.138.842-1.435 1.04-.297.199-.497.496-.595.794-.099.297-.05.645.347.992.396.347 1.783 1.164 2.876 1.611.693.297 1.238.446 1.832.347.595-.099 1.783-.743 2.03-1.437.248-.694.248-1.288.149-1.437-.099-.149-.297-.248-.595-.397z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.147.561 4.265 1.627 6.121L0 24l5.879-1.627C7.735 23.439 9.853 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.069c-2.086 0-4.123-.561-5.879-1.627l-.421-.248-3.494.992.992-3.494-.248-.421C2.561 16.123 2 14.086 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
+          </svg>
+          Chat on WhatsApp: +2349073521743
+        </a>
+      </div>
+    </div>
+  </section> 
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-6 md:mb-0">
+          <img src="https://via.placeholder.com/400" alt="Profile Image" class="rounded-lg shadow-lg mx-auto">
+        </div>
+        <div class="md:w-1/2 md:pl-8">
+          <p class="text-lg text-gray-700 mb-4">
+            Hello! I'm [Your Name], a [your profession, e.g., web developer, designer, etc.] with a passion for creating amazing things. 
+            I specialize in building responsive websites and have experience with modern web technologies.
+          </p>
+          <p class="text-lg text-gray-700">
+            In my free time, I enjoy exploring new tools, learning new skills, and working on exciting projects. Feel free to reach out to collaborate or learn more about my work!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-green-500 text-white py-8">
+    <div class="container mx-auto text-center">
+      <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+      <p class="mb-4">Email: <a href="mailto:novarecord99@gmail.com" class="underline hover:text-green-200">novarecord99@gmail.com</a></p>
+      <p class="mb-4">Follow me on social media:</p>
+      <div class="flex justify-center space-x-4">
+        <a href="https://wa.me/+2349073521743" class="hover:text-green-200">WhatsApp</a>
+        <a href="#" class="hover:text-green-200">Twitter</a>
+        <a href="#" class="hover:text-green-200">LinkedIn</a>
+        <a href="#" class="hover:text-green-200">GitHub</a>
+      </div>
+      <p class="mt-6 text-sm">&copy; 2025 [Your Name]. All rights reserved.</p>
+    </div>
+  </footer> 
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
